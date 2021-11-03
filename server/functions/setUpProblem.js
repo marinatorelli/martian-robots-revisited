@@ -46,7 +46,7 @@ function Grid() {
 function Robot() {
     this.init_x = 0;
     this.init_y = 0;
-    this.init_direction = "";
+    this.init_orientation = "";
     this.outOfBounds = false;
 }
 

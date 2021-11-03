@@ -7,6 +7,9 @@ require('dotenv').config();
 // Backend functions
 const setUp = require('./functions/setUpProblem')
 const checkInput = require('./functions/checkInput')
+const robotMovement = require('./functions/robotMovement')
+const printFormat = require('./functions/printFormat')
+
 
 app.use('/client', express.static('client'));
 app.set('view engine', 'ejs');
@@ -16,6 +19,11 @@ app.use('/', require('../client/routes/appRoute'));
 // main functionality
 setUp.setUp();
 checkInput.checkInput();
+robotMovement.robotMovement();
+printFormat.printInput();
+printFormat.printOutput();
+console.log(robots)
+console.log(grid_map)
 
 // Setting up the port
 const PORT = process.env.PORT || 3000
