@@ -5,5 +5,52 @@
     </head>
     <body>
         <%- include('../partials/navbar'); %>
+            <h1>Expeditions</h1>
+            <table class="table table-inverse">
+
+                <thead>
+                  <tr>
+
+                    <th>Input</th>
+                    <th>Output</th>
+
+                    <th>Number of robots</th>
+                    <th>Number of lost robots</th>
+                    <th>Paths of robots</th>
+                    <th>Number of actions per robot</th>
+
+                    <th>Surface of planet</th>
+                    <th>Explored surface of planet</th>
+                    <th>Percentage of surface explored</th>
+                    <th>Explored surface by robot</th>
+
+                  </tr>
+                </thead>
+              
+                <tbody>
+
+                  <% for(var i=0; i < expedition_data.length; i++) { %>
+
+                  <tr>
+
+                    <td><%= expedition_data[i].input %></td>
+                    <td><%= expedition_data[i].output %></td>
+
+                    <td><%= expedition_data[i].number_of_robots %></td>
+                    <td><%= expedition_data[i].number_of_lost_robots %></td>
+                    <td><%= expedition_data[i].paths_of_robots %></td>
+                    <td><%= expedition_data[i].number_of_actions_per_robot %></td>
+
+                    <td><%= expedition_data[i].surface_of_mars %></td>
+                    <td><%= expedition_data[i].explored_surface %></td>
+                    <td><%= expedition_data[i].percentage_explored_surface %></td>
+                    <td><%= expedition_data[i].explored_surface_by_robot %></td>
+
+                  </tr>
+
+                  <% } %>
+                </tbody>
+
+            </table>
     </body>
 </html>

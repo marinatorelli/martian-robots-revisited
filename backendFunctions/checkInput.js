@@ -1,7 +1,15 @@
-// Get problem input in form of array, with each position being one line from the input string
+// Check if the input is empty
+function inputExists() {
+    if (input == ""){
+        console.error("The input cannot be empty")
+        return false
+    }
+    // In case everything is fine
+    return true
+}
 
+// Check input errors
 function checkInput() {
-
 
     // Check map coordinates are at max 50
     if (map_x > 50 || map_y > 50 || map_x < 0 || map_y < 0){
@@ -35,7 +43,10 @@ function checkInput() {
         }
 
     }
+    // In case everything is fine
     return true
 }
 
+// Export functions
 exports.checkInput = checkInput
+exports.inputExists = inputExists

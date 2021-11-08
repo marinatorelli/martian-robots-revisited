@@ -5,5 +5,54 @@
     </head>
     <body>
         <%- include('../partials/navbar'); %>
+        <h1>Insights</h1>
+        <table class="table table-inverse">
+
+            <thead>
+              <tr>
+
+                <th>Number of robots</th>
+                <th>Average number of robots</th>
+
+                <th>Number of lost robots</th>
+                <th>Average number of lost robots</th>
+
+
+                <th>Total surface of Mars</th>
+                <th>Average surface of Mars</th>
+                <th>Explored surface of Mars</th>
+                <th>Average explored surface of Mars</th>
+
+                <th>Percentage of robots lost</th>
+                <th>Percentage of surface explored</th>
+
+              </tr>
+            </thead>
+          
+            <tbody>
+
+              <% for(var i=0; i < insights_data.length; i++) { %>
+
+              <tr>
+
+                <td><%= insights_data[i]._number_of_robots %></td>
+                <td><%= insights_data[i]._average_number_of_robots %></td>
+                <td><%= insights_data[i]._number_of_lost_robots %></td>
+                <td><%= insights_data[i]._average_number_of_lost_robots %></td>
+
+                <td><%= insights_data[i]._surface_of_mars_total %></td>
+                <td><%= insights_data[i]._average_surface_of_mars %></td>
+                <td><%= insights_data[i]._explored_surface %></td>
+                <td><%= insights_data[i]._average_explored_surface %></td>
+
+                <td><%= insights_data[i]._percetage_of_robots_lost %></td>
+                <td><%= insights_data[i]._percentage_of_surface_explored %></td>
+
+              </tr>
+
+              <% } %>
+            </tbody>
+
+        </table>
     </body>
 </html>
