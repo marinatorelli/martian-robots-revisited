@@ -9,13 +9,13 @@ const setUp = require('./backendFunctions/setUpProblem')
 const checkInput = require('./backendFunctions/checkInput')
 const robotMovement = require('./backendFunctions/robotMovement')
 const printFormat = require('./backendFunctions/printFormat')
-const calcAnalytics = require('./backendFunctionss/calcAnalytics');
+const calcAnalytics = require('./backendFunctions/calcAnalytics');
 const storeExpedition = require('./backendFunctions/storeExpedition');
 
 
 app.use('/client', express.static('client'));
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '../client/views'));
+app.set('views', path.join(__dirname, './client/views'));
 app.use('/', require('./client/routes/appRoute'));
 app.use(express.json());
 

@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node server/app.js",
-    "devStart": "nodemon server/app.js",
+    "start": "node app.js",
+    "devStart": "nodemon app.js",
     "test": "mocha || true"
   },
   "repository": {
