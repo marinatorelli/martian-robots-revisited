@@ -1,8 +1,3 @@
-// Define and load the database for the persistance layer
-const Datastore = require('nedb');
-const database = new Datastore("database.db");
-database.loadDatabase();
-
 // Main setUp function
 const setUp = () => {
     initProblem();

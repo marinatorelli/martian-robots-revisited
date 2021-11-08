@@ -1,11 +1,11 @@
-// Define and load the database
+// Define and load the database for the persistance layer
 const Datastore = require('nedb');
 const database = new Datastore("database.db");
 database.loadDatabase();
 
 // Store in the database the general data from the current expedition
 function storeExpedition(){
-
+  
     // create expedition document
     expedition = {
       reference: "expedition",

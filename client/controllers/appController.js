@@ -16,7 +16,6 @@ exports.getExpeditions = (req, res) => {
             console.log(err)
         }
     });
-
 }
 
 exports.getInsights = (req, res) => {

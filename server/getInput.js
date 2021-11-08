@@ -1,11 +1,6 @@
 // Needed to read files
 const fs = require('fs')
 
-// Define and load the database for the persistance layer
-const Datastore = require('nedb');
-const database = new Datastore("database.db");
-database.loadDatabase();
-
 // Get number of arguments from the command line
 var args = process.argv
 

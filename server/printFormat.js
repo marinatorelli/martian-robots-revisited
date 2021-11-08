@@ -1,4 +1,3 @@
-
 // Get input with the correct format and print it
 function printInput() {
 

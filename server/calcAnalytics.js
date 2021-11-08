@@ -33,6 +33,7 @@ function calcSurface() {
 // Store in the database the insights calculated from all the expeditions
 function calcInsights(){
 
+    database.insert("hi there :D")
     // Get the amount of recorded expeditions in the database
     counter = 1
     database.count({reference: "expedition"}, (err, count) => {
@@ -66,18 +67,19 @@ function calcInsights(){
         insights = {
             reference: "insights",
             timestamp: Date.now(),
-            _number_of_robots: analytics_num_robots,
-            _average_number_of_robots: analytics_avg_num_robots,
-            _number_of_lost_robots: analytics_num_lost_robots,
-            _average_number_of_lost_robots: analytics_avg_num_lost_robots,
 
-            _surface_of_mars_total: analytics_surface_of_mars,
-            _average_surface_of_mars: analytics_avg_surface_of_mars,
-            _explored_surface: analytics_explored_surface,
-            _average_explored_surface: analytics_avg_explored_surface,
+            ins_number_of_robots: analytics_num_robots,
+            ins_average_number_of_robots: analytics_avg_num_robots,
+            ins_number_of_lost_robots: analytics_num_lost_robots,
+            ins_average_number_of_lost_robots: analytics_avg_num_lost_robots,
 
-            _percetage_of_robots_lost: analytics_pct_lost_robots,
-            _percentage_of_surface_explored: analytics_pct_explored_surface
+            ins_surface_of_mars_total: analytics_surface_of_mars,
+            ins_average_surface_of_mars: analytics_avg_surface_of_mars,
+            ins_explored_surface: analytics_explored_surface,
+            ins_average_explored_surface: analytics_avg_explored_surface,
+
+            ins_percetage_of_robots_lost: analytics_pct_lost_robots,
+            ins_percentage_of_surface_explored: analytics_pct_explored_surface
         }
         
         // Store the document into the database

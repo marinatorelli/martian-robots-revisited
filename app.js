@@ -12,7 +12,6 @@ const printFormat = require('./server/printFormat')
 const calcAnalytics = require('./server/calcAnalytics');
 const storeExpedition = require('./server/storeExpedition');
 
-
 app.use('/client', express.static('client'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './client/views'));
@@ -79,7 +78,7 @@ function main(){
 }
 
 // Setting up the port
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 
 app.listen(PORT, () => {
     console.log(`Listening on port: ${PORT}`)
