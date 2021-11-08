@@ -65,7 +65,7 @@ function calcInsights(){
         // Create a document with the insights info
         insights = {
             reference: "insights",
-
+            timestamp: Date.now(),
             _number_of_robots: analytics_num_robots,
             _average_number_of_robots: analytics_avg_num_robots,
             _number_of_lost_robots: analytics_num_lost_robots,

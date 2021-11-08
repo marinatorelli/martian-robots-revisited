@@ -4,13 +4,13 @@ const path = require('path');
 require('dotenv').config();
 
 // Backend functions
-const getInput = require('./backendFunctions/getInput')
-const setUp = require('./backendFunctions/setUpProblem')
-const checkInput = require('./backendFunctions/checkInput')
-const robotMovement = require('./backendFunctions/robotMovement')
-const printFormat = require('./backendFunctions/printFormat')
-const calcAnalytics = require('./backendFunctions/calcAnalytics');
-const storeExpedition = require('./backendFunctions/storeExpedition');
+const getInput = require('./server/getInput')
+const setUp = require('./server/setUpProblem')
+const checkInput = require('./server/checkInput')
+const robotMovement = require('./server/robotMovement')
+const printFormat = require('./server/printFormat')
+const calcAnalytics = require('./server/calcAnalytics');
+const storeExpedition = require('./server/storeExpedition');
 
 
 app.use('/client', express.static('client'));

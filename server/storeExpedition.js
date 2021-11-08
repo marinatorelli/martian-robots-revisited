@@ -9,6 +9,7 @@ function storeExpedition(){
     // create expedition document
     expedition = {
       reference: "expedition",
+      timestamp: Date.now(),
       input: input,
       output: final_robots,
   
