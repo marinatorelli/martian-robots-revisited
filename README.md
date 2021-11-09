@@ -11,7 +11,29 @@ Main differences and improvements from the first attempt:
 - Built Docker image
 - Deployment to heroku: https://martian-robots-revisited.herokuapp.com/
 
-# martian-robots-revisited
+---
+
+## Running the problem
+
+The problem can run with a CLI or a REST API approach.
+### CLI approach: 
+The command written in the command line must be of the form `node app.js input.txt` or `npm start input.txt`,
+where the file `input.txt` contains the input of the problem in the correct format.
+
+In this case, the output of the problem will be printed in the terminal.
+
+### REST API approach: 
+You can access the problem by typing the following `node app.js` or `npm start` in the command line (notice how no other argument should be passed).
+
+In this case, the user must refer to the indicated web server and enter the input there.
+The output of the problem will be visible on the web and in the terminal.
+
+The web interface has three different views, that get rendered depending on the `/`. The user can use a navbar to navigate through the different views.
+- **New expedition:** It is the main page.  Here, the user is presented with the instructions for running the programme and a textbox in which they can introduce the problem input.
+- **Previous expeditions** `GET /expeditions`: It shows the data gathered from each problem.
+- **Data insights** `GET '/insights`: It shows the data insights calculated from all the expeditions that are in the database.
+
+---
 
 ## Problem definition
 
@@ -73,25 +95,3 @@ LLFFFRFLFL
 3 3 N LOST
 
 4 2 N
-
---- 
-
-## Running the problem
-
-The problem can run with a CLI or a REST API approach.
-### CLI approach: 
-The command written in the command line must be of the form `node app.js input.txt` or `npm start input.txt`,
-where the file `input.txt` contains the input of the problem in the correct format.
-
-In this case, the output of the problem will be printed in the terminal.
-
-### REST API approach: 
-You can access the problem by typing the following `node app.js` or `npm start` in the command line (notice how no other argument should be passed).
-
-In this case, the user must refer to the indicated web server and enter the input there.
-The output of the problem will be visible on the web and in the terminal.
-
-The web interface has three different views, that get rendered depending on the `/`. The user can use a navbar to navigate through the different views.
-- **New expedition:** It is the main page.  Here, the user is presented with the instructions for running the programme and a textbox in which they can introduce the problem input.
-- **Previous expeditions** `GET /expeditions`: It shows the data gathered from each problem.
-- **Data insights** `GET '/insights`: It shows the data insights calculated from all the expeditions that are in the database.
