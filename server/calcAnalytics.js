@@ -33,7 +33,6 @@ function calcSurface() {
 // Store in the database the insights calculated from all the expeditions
 function calcInsights(){
 
-    database.insert("hi there :D")
     // Get the amount of recorded expeditions in the database
     counter = 1
     database.count({reference: "expedition"}, (err, count) => {

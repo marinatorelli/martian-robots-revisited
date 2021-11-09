@@ -1,5 +1,6 @@
 // Needed to read files
 const fs = require('fs')
+const { Server } = require('http')
 
 // Get number of arguments from the command line
 var args = process.argv
@@ -22,8 +23,7 @@ const getInput = () =>{
         return false
     }
 
-    else  {
-        //if (args.length == 2 && args[0]=="nodemon")
+    else if (args.length == 2) {
 
         // Show the user that the data is coming
         console.log("Initializing problem on the web server")
@@ -31,17 +31,12 @@ const getInput = () =>{
         // Used for differentiating where the input comes from for the app.js file
         return true
     }
-    /*else if (args[0] == "mocha") {
-        console.log("Running tests")
-        input = fs.readFileSync('input.txt', 'utf8')
-        // Divide the string by lines
-        input_by_line = input.split("\r\n")
-    }
+
     else {
-        console.log("The number of arguments is wrong.")
+        console.log("The arguments are wrong.")
         process.exit()
     }
-    */
+    
 }
 
 // Export function

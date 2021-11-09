@@ -34,12 +34,11 @@ app.post('/api', (request, response) => {
    
     input = input_data.input;
     input_by_line = input.split("\n")
-    main();
+    main();   
     response.json({
         status: "success",
         input: input
     });
-
 });
 
 
