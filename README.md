@@ -93,5 +93,5 @@ The output of the problem will be visible on the web and in the terminal.
 
 The web interface has three different views, that get rendered depending on the `/`. The user can use a navbar to navigate through the different views.
 - **New expedition:** It is the main page.  Here, the user is presented with the instructions for running the programme and a textbox in which they can introduce the problem input.
-- **Previous expeditions** `GET /expedition`: It shows the data gathered from each problem.
+- **Previous expeditions** `GET /expeditions`: It shows the data gathered from each problem.
 - **Data insights** `GET '/insights`: It shows the data insights calculated from all the expeditions that are in the database.
