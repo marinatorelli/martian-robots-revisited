@@ -1,3 +1,9 @@
+/* 
+Hi! If you're reading this I'm sorry I didn't have the time to build a proper test suite! Testing is not something uni courses focus on (sadly)
+and even though I've taught myself some stuff this last week it wasn't enough to do a good job :/
+I feel bad leaving things unchecked from the problem requirements list and I would definitely like to improve my testing skills in the near future :D
+*/
+
 const assert = require('chai').assert;
 const app = require('../server/app')
 const getInput = require('../server/functions/getInput')
