@@ -9,7 +9,7 @@ Main differences and improvements from the first attempt:
 - Commented code and no code snippets with no use
 - Included .env and .gitignore files
 - Built Docker image
-- Deployment to heroku
+- Deployment to heroku: https://martian-robots-revisited.herokuapp.com/
 
 # martian-robots-revisited
 
