@@ -7,7 +7,7 @@ Main differences and improvements from the first attempt:
 - CLI version shows the specific error of the input
 - Fewer nested loops
 - Commented code and no code snippets with no use
-- Included .env and .gitignore file
+- Included .env and .gitignore files
 
 # martian-robots-revisited
 
