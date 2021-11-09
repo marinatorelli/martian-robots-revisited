@@ -8,6 +8,8 @@ Main differences and improvements from the first attempt:
 - Fewer nested loops
 - Commented code and no code snippets with no use
 - Included .env and .gitignore files
+- Built Docker image
+- Deployment to heroku
 
 # martian-robots-revisited
 
