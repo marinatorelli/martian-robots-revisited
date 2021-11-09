@@ -4,7 +4,7 @@ Main differences and improvements from the first attempt:
 
 - Better organization/modularization of the code
 - Frontend with views and ejs instead of a single html file
-- CLI version shows the specific error of the input
+- CLI version shows the specific error from the input
 - Fewer nested loops
 - Commented code and no code snippets with no use
 - Included .env and .gitignore files
